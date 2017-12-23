@@ -1,6 +1,6 @@
 # todolist
 
-An application made using nodejs, express, mongodb and jQuery.
+An application made using nodejs, express, mongodb, jQuery and bulma
 
 ## Install
 
@@ -20,4 +20,4 @@ node index.js
 nodemon index.js
 ```
 
-![screenshot](assets/screenshot.png)
+![screenshot](assets/Screenshot.png)
