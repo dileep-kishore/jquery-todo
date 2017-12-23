@@ -1,6 +1,6 @@
 let mongoose = require('mongoose')
 mongoose.set('debug', true)
-mongoose.connect('mongodb://localhost/todo-api')
+mongoose.connect('mongodb://localhost/todo-api', { useMongoClient: true })
 
 mongoose.Promise = Promise;
 

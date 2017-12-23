@@ -1,8 +1,6 @@
 let mongoose = require('mongoose')
 
-// name
-// completed
-// created_date
+// name, completed, created_date
 let todoSchema = new mongoose.Schema({
   name: {
     type: String,
