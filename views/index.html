@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TODO app</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+        <link href="app.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body class="Site">
+
+        <section class="hero" id="header-section">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <header>
+                        <h1 class="title has-text-weight-light" id="heading">todo<span class="has-text-weight-bold">list</span></h1>
+                        <h2 class="subtitle">A simple todo list app built using node, express, jquery and bulma</h2>
+                    </header>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="field-section">
+            <div class="container">
+                <div class="field has-addons">
+                    <div class="control has-icons-left is-expanded">
+                        <input class="input is-large" type="text" id="todoInput" placeholder="Insert your task here...">
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-list-ul"></i>
+                        </span>
+                    </div>
+                    <div class="control">
+                        <a class="button is-large is-primary" id="todo-btn">
+                            Add
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="list-section">
+            <div class="container">
+
+                <ul class="list"> </ul>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                <p>
+                    <strong>todolist</strong> by <a href="http://jgthms.com">Dileep Kishore</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+                </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>

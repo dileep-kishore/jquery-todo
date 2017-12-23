@@ -5,10 +5,12 @@ let bodyParser = require('body-parser')
 
 let todoRoutes = require('./routes/todos')
 
-app.get('/', (request, response) => response.send("Hello from the root route") )
-
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
+app.use(express.static(__dirname + '/public')) // dirname gives absolute path
+app.use(express.static(__dirname + '/views')) // this is given second priority for static files
+
+app.get('/', (request, response) => response.sendFile("index.html") )
 
 app.use('/api/todos', todoRoutes) // prefixing this route to all routes in todoRoutes
 

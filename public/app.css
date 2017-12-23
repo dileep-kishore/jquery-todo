@@ -1,0 +1,57 @@
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(223, 217, 217);
+}
+
+#list-section {
+  flex: 1;
+}
+
+#heading {
+  font-size: 10em;
+  /* font-weight: 100; */
+}
+
+#heading span {
+  /* font-weight: 900; */
+  text-decoration: underline;
+  color: purple;
+}
+
+h2.subtitle {
+  color: gray;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transition: 0.5s ease-in;
+}
+
+.box .text {
+  flex-basis: 90%;
+}
+
+.box:hover {
+  background: lightgray;
+}
+
+.done .text {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.box .icon {
+  flex-basis: 5%;
+}
+
+.done:hover {
+  background-color: white;
+}
+
+.footer {
+  padding: 10px;
+}
