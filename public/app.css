@@ -9,6 +9,10 @@
   flex: 1;
 }
 
+#field-section {
+  border-bottom: lightgrey dashed;
+}
+
 #heading {
   font-size: 10em;
   /* font-weight: 100; */
@@ -28,7 +32,11 @@ h2.subtitle {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-in-out;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .box .text {
@@ -46,6 +54,12 @@ h2.subtitle {
 
 .box .icon {
   flex-basis: 5%;
+}
+
+.box .icon:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.479)
 }
 
 .done:hover {
