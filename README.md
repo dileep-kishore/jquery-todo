@@ -2,6 +2,8 @@
 
 An application made using nodejs, express, mongodb, jQuery and bulma.
 
+![screenshot](assets/Screenshot.png)
+
 ## Structure
 
 1. The TODO model in mongodb has three properties: name (required), completed (default: false) and date created (default: Date.now)
@@ -28,10 +30,17 @@ npm install -g nodemon
 
 ## Run
 
+First start the `mongodb` server
 ```sh
-node index.js
-# or
-nodemon index.js
+./mongod
 ```
 
-![screenshot](assets/Screenshot.png)
+- Run using `node`
+```sh
+node index.js
+```
+
+- Run using `nodemon` (automatic server restarts - useful for development)
+```sh
+nodemon index.js
+```
